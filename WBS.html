@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Breakdown Structure (WBS)</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+      * {
+        font-family: "Roboto", serif;
+        text-align: center;
+      }
+      .tree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 250px;
+        height: 50px;
+      }
+      .project {
+        background-color: black;
+      }
+      .initiation {
+        background-color: orange;
+      }
+      .planning {
+        background-color: gold;
+        color: black;
+      }
+      .execution {
+        background-color: purple;
+      }
+      .control {
+        background-color: lightgreen;
+        color: black;
+      }
+      .closure {
+        background-color: red;
+      }
+      .end {
+        background-color: burlywood;
+        color: black;
+      }
+      .sub-box {
+        background-color: lightblue;
+        color: black;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        padding: 20px;
+        width: 250px;
+        height: 30px;
+      }
+      .line {
+        border-left: 3px solid black;
+        height: 30px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tree">
+      <div class="box project">Booway | Travel Website</div>
+
+      <div class="line"></div>
+
+      <div style="display: flex; justify-content: center">
+        <div>
+          <div class="box initiation">
+            Project Planning & Requirement Analysis
+          </div>
+          <div class="sub-box">Define scope & objectives</div>
+
+          <div class="sub-box">Identify stakeholders</div>
+
+          <div class="sub-box">Feasibility study</div>
+
+          <div class="sub-box">Prepare SRS</div>
+
+          <div class="sub-box">Set timeline & milestones</div>
+        </div>
+
+        <div>
+          <div class="box planning">UI/UX & Frontend</div>
+          <div class="sub-box">Design wireframes</div>
+          <div class="sub-box">Develop responsive UI</div>
+          <div class="sub-box">Implement navigation</div>
+          <div class="sub-box">Integrate search (Algolia)</div>
+          <div class="sub-box">User, Provider & Admin dashboards</div>
+        </div>
+
+        <div>
+          <div class="box execution">Backend (Laravel + MySQL + APIs)</div>
+          <div class="sub-box">Set up server & DB</div>
+          <div class="sub-box">User authentication (OAuth)</div>
+          <div class="sub-box">API development</div>
+          <div class="sub-box">Booking system</div>
+          <div class="sub-box">Reviews & ratings</div>
+          <div class="sub-box">Email notifications</div>
+        </div>
+
+        <div>
+          <div class="box control">Search Functionality (Algolia)</div>
+          <div class="sub-box">Define filters & ranking</div>
+          <div class="sub-box">API integration</div>
+          <div class="sub-box">Auto-suggestions</div>
+          <div class="sub-box">Performance optimization</div>
+          <div class="sub-box">Test & refine results</div>
+        </div>
+
+        <div>
+          <div class="box closure">Testing & Debugging</div>
+          <div class="sub-box">Unit & integration testing</div>
+          <div class="sub-box">Performance & security checks</div>
+          <div class="sub-box">Usability testing</div>
+          <div class="sub-box">Bug fixing & optimization</div>
+        </div>
+        <div>
+          <div class="box end">Deployment & Maintenance</div>
+          <div class="sub-box">Set up hosting & domain</div>
+          <div class="sub-box">Deploy frontend & backend</div>
+          <div class="sub-box">Backup & monitoring</div>
+          <div class="sub-box">Future enhancements</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
